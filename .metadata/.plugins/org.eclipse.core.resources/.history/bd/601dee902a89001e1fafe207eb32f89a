@@ -1,0 +1,5 @@
+package management.hcms.utils;
+
+public class InitSampleData {
+
+}

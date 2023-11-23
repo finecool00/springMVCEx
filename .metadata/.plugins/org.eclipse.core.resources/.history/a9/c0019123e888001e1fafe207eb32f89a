@@ -1,0 +1,11 @@
+package management.hcms.member.dao;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import management.hcms.member.Member;
+
+public class MemberDao {
+
+	private Map<String, Member> MemberDB = new HashMap<>();
+}

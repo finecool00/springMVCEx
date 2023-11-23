@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- DBConnectionInfo 빈 생성 -->
+	
+	<!-- 개발용 데이터베이스 빈 생성 -->
+	<bean id="dev_DBConnectionInfo" class="management.hcms.member.DBConnectionInfo">
+		<property name="url" value="000.111.222.333"/>
+		<property name="userId" value="admin"/>
+		<property name="userPw" value="1234"/>
+	</bean>
+	
+	<!-- 실제 서비스용 데이터베이스 빈 생성 -->
+	<bean id="real_DBConnectionInfo" class="management.hcms.member.DBConnectionInfo">
+		<property name="url" value="555.666.777.888"/>
+		<property name="userId" value="master"/>
+		<property name="userPw" value="7890"/>
+	</bean>
+
+</beans>

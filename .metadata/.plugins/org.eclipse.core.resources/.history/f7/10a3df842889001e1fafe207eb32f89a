@@ -1,0 +1,13 @@
+package management.hcms.member.service;
+
+import management.hcms.member.dao.MemberDao;
+
+public class MemberSelectService {
+
+	MemberDao memberDao;
+	
+	public MemberSelectService(MemberDao memberDao) {
+		this.memberDao = memberDao;
+	}
+	
+}

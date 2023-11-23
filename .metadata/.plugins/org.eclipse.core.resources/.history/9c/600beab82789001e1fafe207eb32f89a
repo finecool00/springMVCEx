@@ -1,0 +1,19 @@
+package management.hcms.member.service;
+
+import management.hcms.member.Member;
+import management.hcms.member.dao.MemberDao;
+
+public class MemberRegisterService {
+
+	MemberDao memberDao;
+	
+	public MemberRegisterService(Member member) {
+		this.memberDao = memberDao;
+	}
+	
+	public boolean verify(String memberId) {
+		Member member = memberDao.select(memberId);
+		return member == null ? true : false;
+	}
+	
+}

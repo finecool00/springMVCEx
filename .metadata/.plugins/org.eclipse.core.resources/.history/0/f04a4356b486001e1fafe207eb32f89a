@@ -1,0 +1,19 @@
+package hello;
+
+import java.util.Scanner;
+
+public class SelectLanguage {
+
+	public void sayHello() {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Select language! 1.korea, 2.english");
+		
+		int num = scan.nextInt();
+	}
+	
+	
+	
+	
+}

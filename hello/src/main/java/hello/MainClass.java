@@ -1,0 +1,28 @@
+package hello;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		//연습문제 4
+//		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext("classpath:applicationContext.xml");
+//		Greeting greeting = ctx.getBean("greeting", Greeting.class);
+//		
+//		greeting.helloMaven();
+//		
+//		ctx.close();
+		
+		//연습문제 5
+		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext("classpath:applicationContext.xml");
+		SelectLanguage selectLanguage = ctx.getBean("selectLanguage", SelectLanguage.class);
+		
+		
+		selectLanguage.sayHello();
+		
+		ctx.close();
+		
+	}
+	
+}

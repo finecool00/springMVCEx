@@ -1,0 +1,5 @@
+package management.hcms.member.service;
+
+public class MemberRegisterService {
+
+}

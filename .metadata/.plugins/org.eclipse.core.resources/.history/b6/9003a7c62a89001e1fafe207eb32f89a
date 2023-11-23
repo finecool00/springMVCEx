@@ -1,0 +1,16 @@
+package management.hcms.utils;
+
+import java.time.LocalDate;
+
+public class InitSampleData {
+
+	String[] memberIds;
+	String[] memberPws;
+	String[] phoneNumbers;
+	String[] emails;
+	LocalDate[] RegDates;
+	LocalDate[] EndModiDates;
+	
+	
+	
+}

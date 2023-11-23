@@ -1,0 +1,13 @@
+package ch05_pjt_01.contact.service;
+
+import ch05_pjt_01.contact.dao.ContactDao;
+
+public class ContactRegisterService {
+
+	private ContactDao contactDao;
+	
+	public ContactRegisterService(ContactDao contactDao) {
+		this.contactDao = contactDao;
+	}
+	
+}

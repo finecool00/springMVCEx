@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="ch02_pjt_01.MainClass"/>
+    <fullyQualifiedTypeName name="ch02_pjt_01.MyCalculator"/>
+    <fullyQualifiedTypeName name="ch04_pjt_01.ems.utils.InitSampleData"/>
+    <fullyQualifiedTypeName name="ch04_pjt_01.ems.member.service.StudentRegisterService"/>
+    <fullyQualifiedTypeName name="ch04_pjt_01.ems.member.service.EMSInformationService"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="management.hcms.member.Member"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="management.hcms.utils.InitSampleData"/>
+    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+    <fullyQualifiedTypeName name="management.hcms.member.service.MemberModifyService"/>
+    <fullyQualifiedTypeName name="management.hcms.member.service.MemberSelectService"/>
+    <fullyQualifiedTypeName name="management.hcms.member.service.MemberDeleteService"/>
+</qualifiedTypeNameHistroy>

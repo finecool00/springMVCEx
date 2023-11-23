@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 샘플데이터 입력 -->
+	<bean id="initSampleData" class="management.hcms.member.utils.InitSampleData">
+		<!-- memberId 필드 초기화 -->
+		<property name="memberId">
+			<array>
+				<value>finecool00</value>
+				<value>teddybear01</value>
+				<value>armytiger02</value>
+			</array>
+		</property>
+		
+		<!-- memberPw 필드 초기화 -->
+		<property name="memberPw">
+			<array>
+				<value>code000</value>
+				<value>code111</value>
+				<value>code222</value>				
+			</array>
+		</property>
+		
+		<!-- phoneNumber 필드 초기화 -->
+		<property name="phoneNumber">
+			<array>
+				<value>010-1234-5678</value>
+				<value>010-9012-3456</value>
+				<value>010-7890-1234</value>
+			</array>
+		</property>
+		
+		<!-- email 필드 초기화 -->
+		<property name="email">
+			<array>
+				<value>aaa@aaa.com</value>
+				<value>bbb@aaa.com</value>
+				<value>ccc@aaa.com</value>
+			</array>
+		</property>
+	</bean>
+
+
+
+</beans>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- HCMSInformationService 빈 생성 -->
+	<bean id="hCMSInformationService" class="management.hcms.member.service.HCMSInformationService">
+		<property name="info" value="code center Management System was developed in 2023"/>
+		<property name="copyRight" value="COPYRIGHT(C) 2023 HCMS CO., LTD. ALL RIGHT RESERVED"/>
+		<property name="ver" value="The version is 1.0"/>
+		<property name="sYear" value="2023"/>
+		<property name="sMonth" value="11"/>
+		<property name="sDay" value="20"/>
+		<property name="eYear" value="2023"/>
+		<property name="eMonth" value="11"/>
+		<property name="eDay" value="22"/>
+		<property name="developers">
+			<list>
+				<value>Bae Jae Wook</value>
+				<value>Vanessa</value>
+				<value>Chuck</value>
+				<value>Blair</value>
+				<value>Dan</value>
+			</list>
+		</property>
+		<property name="administrators">
+			<map>
+				<entry>
+					<key>
+						<value>Bae Jae Wook</value>
+					</key>
+					<value>codeJW@springPjt.org</value>
+				</entry>
+			</map>
+		</property>
+		<property name="dbInfos">
+			<map>
+				<entry>
+					<key>
+						<value>dev</value>
+					</key>
+					<ref bean="dev_DBConnectionInfo"/>
+				</entry>
+				<entry>
+					<key>
+						<value>real</value>
+					</key>
+					<ref bean="real_DBConnectionInfo"/>
+				</entry>
+			</map>
+		</property>
+	</bean>
+</beans>

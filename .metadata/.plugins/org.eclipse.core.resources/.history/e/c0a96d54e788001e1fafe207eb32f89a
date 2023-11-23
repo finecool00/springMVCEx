@@ -1,0 +1,75 @@
+package management.hcms.member.dao;
+
+import java.time.LocalDate;
+
+public class MemberDao {
+
+	String memberId;
+	String memberPw;
+	String phoneNumber;
+	String email;
+	LocalDate RegDate;
+	LocalDate EndModiDate;
+	
+	
+	//생성자
+	public MemberDao(String memberId, String memberPw, String phoneNumber, String email, LocalDate regDate, LocalDate endModiDate) {
+		this.memberId = memberId;
+		this.memberPw = memberPw;
+		this.phoneNumber = phoneNumber;
+		this.email = email;
+		RegDate = regDate;
+		EndModiDate = endModiDate;
+	}
+
+	
+	//getter, setter
+	public String getMemberId() {
+		return memberId;
+	}
+
+	public void setMemberId(String memberId) {
+		this.memberId = memberId;
+	}
+
+	public String getMemberPw() {
+		return memberPw;
+	}
+
+	public void setMemberPw(String memberPw) {
+		this.memberPw = memberPw;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public LocalDate getRegDate() {
+		return RegDate;
+	}
+
+	public void setRegDate(LocalDate regDate) {
+		RegDate = regDate;
+	}
+
+	public LocalDate getEndModiDate() {
+		return EndModiDate;
+	}
+
+	public void setEndModiDate(LocalDate endModiDate) {
+		EndModiDate = endModiDate;
+	}
+	
+}

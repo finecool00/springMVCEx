@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="initSampleData" class="ch04_pjt_01.ems.utils.InitSampleData">
+		<!-- sNums 필드 초기화 -->
+		<property name="sNums">
+			<array>
+				<value>hbs001</value>
+				<value>hbs002</value>
+				<value>hbs003</value>
+				<value>hbs004</value>
+				<value>hbs005</value>
+			</array>
+		</property>
+		
+		<!-- sIds 필드 초기화 -->
+		<property name="sIds">
+			<array>
+				<value>rabbit</value>
+				<value>hippo</value>
+				<value>raccoon</value>
+				<value>elephant</value>
+				<value>lion</value>
+			</array>
+		</property>
+		
+		<!-- sPws 필드 초기화 -->
+		<property name="sPws">
+			<array>
+				<value>p0001</value>
+				<value>p0002</value>
+				<value>p0003</value>
+				<value>p0004</value>
+				<value>p0005</value>
+			</array>
+		</property>
+		
+		<!-- sNames 필드 초기화 -->
+		<property name="sNames">
+			<array>
+				<value>agatha</value>
+				<value>barbara</value>
+				<value>chris</value>
+				<value>doris</value>
+				<value>elva</value>
+			</array>
+		</property>
+		
+		<!-- sAges 필드 초기화 -->
+		<property name="sAges">
+			<array>
+				<value>19</value>
+				<value>22</value>
+				<value>20</value>
+				<value>27</value>
+				<value>19</value>
+			</array>
+		</property>
+	</bean>
+
+</beans>

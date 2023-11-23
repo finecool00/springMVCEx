@@ -1,0 +1,34 @@
+package ch05_pjt_01.contact.dao;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import ch05_pjt_01.contact.ContactSet;
+
+public class ContactDao {
+
+	//연락처 정보(key : 이름, value : 연락처 정보(이름, 전화번호))
+	private Map<String, ContactSet> contactDB = new HashMap<String, ContactSet>();
+	
+	
+	//등록 기능
+	public void insert(ContactSet contactSet) {
+		contactDB.put(contactSet.getName(), contactSet);
+	}
+	
+	
+	//조회 기능
+	public ContactSet select(String name) {
+		return contactDB.get(name);
+	}
+	
+	
+	//전체 리스트
+	public Map<String, ContactSet> getContactDB() {
+		return contactDB;
+	}
+	
+	
+	
+	
+}

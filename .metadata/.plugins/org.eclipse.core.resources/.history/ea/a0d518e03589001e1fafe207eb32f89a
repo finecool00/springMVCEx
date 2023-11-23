@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 샘플데이터 입력 -->
+	<bean id="initSampleData" class="management.hcms.member.utils.InitSampleData">
+		<!-- memberId 필드 초기화 -->
+		<property name="memberIds">
+			<array>
+				<value>finecool00</value>
+				<value>teddybear01</value>
+				<value>armytiger02</value>
+			</array>
+		</property>
+		
+		<!-- memberPw 필드 초기화 -->
+		<property name="memberPws">
+			<array>
+				<value>code000</value>
+				<value>code111</value>
+				<value>code222</value>				
+			</array>
+		</property>
+		
+		<!-- phoneNumber 필드 초기화 -->
+		<property name="phoneNumbers">
+			<array>
+				<value>010-1234-5678</value>
+				<value>010-9012-3456</value>
+				<value>010-7890-1234</value>
+			</array>
+		</property>
+		
+		<!-- email 필드 초기화 -->
+		<property name="emails">
+			<array>
+				<value>aaa@aaa.com</value>
+				<value>bbb@aaa.com</value>
+				<value>ccc@aaa.com</value>
+			</array>
+		</property>
+		
+		<!-- regDate 필드 초기화 -->
+		<property name="regDates">
+			<array>
+				<value>2023-11-02</value>
+				<value>2020-05-18</value>
+				<value>2018-12-30</value>
+			</array>
+		</property>
+		
+		<!-- endModiDate 필드 초기화 -->
+		<property name="endModiDates">
+			<array>
+				<value>2023-11-20 15:00</value>
+				<value>2023-11-20 15:00</value>
+				<value>2023-11-20 15:00</value>
+			</array>
+		</property>
+	</bean>
+	
+	
+	<!-- MemberDao 빈 생성 -->
+	<bean id="memberDao" class="management.hcms.member.dao.MemberDao"/>
+	
+	<!-- MemberSelectService 빈 생성 -->
+	<bean id="memberSelectService" class="management.hcms.member.service.MemberSelectService">
+		<constructor-arg ref="memberDao"/>
+	</bean>
+	
+	<!-- MemberRegisterService 빈 생성 -->
+	<bean id="memberRegisterService" class="management.hcms.member.service.MemberRegisterService">
+		<constructor-arg ref="memberDao"/>
+	</bean>
+	
+	<!-- MemberModifyService 빈 생성 -->
+	<bean id="memberModifyService" class="management.hcms.member.service.MemberModifyService">
+		<constructor-arg ref="memberDao"/>
+	</bean>
+	
+	<!-- MemberDeleteService 빈 생성 -->
+	<bean id="memberDeleteService" class="management.hcms.member.service.MemberDeleteService">
+		<constructor-arg ref="memberDao"/>
+	</bean>
+	
+	<!-- TotalMemberSelectService 빈 생성 -->
+	<bean id="totalMemberSelectService" class="management.hcms.member.service.TotalMemberSelectService">
+		<constructor-arg ref="memberDao"/>
+	</bean>
+
+	<!-- PrintMemberInformationService 빈 생성 -->
+	<bean id="printMemberInformationService" class="management.hcms.member.service.PrintMemberInformationService">
+		<constructor-arg ref="totalMemberSelectService"/>
+	</bean>
+	
+</beans>

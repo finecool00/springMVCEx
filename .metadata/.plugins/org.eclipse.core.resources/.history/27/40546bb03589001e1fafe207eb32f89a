@@ -1,0 +1,13 @@
+package management.hcms;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		
+		//샘플데이터 입력
+		
+		
+	}
+	
+}

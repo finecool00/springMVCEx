@@ -1,0 +1,5 @@
+package management.hcms.member;
+
+public class Member {
+
+}
